@@ -8,4 +8,7 @@ end
 function SpellExecutor:ExecuteSpell()
 end
 
+function SpellExecutor:Update(delta)
+end
+
 return SpellExecutor

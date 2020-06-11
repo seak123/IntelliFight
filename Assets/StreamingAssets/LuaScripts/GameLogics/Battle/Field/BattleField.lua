@@ -30,6 +30,10 @@ function BattleField:Init()
     self:Register()
 end
 
+function BattleField:Update(delta)
+    self.spellExecutor:Update(delta)
+end
+
 function BattleField:Register()
     EventManager:On("ExecuteCard", self.PlayCard, self)
     EventManager:On("ExecuteAction", self.PlayAction, self)
